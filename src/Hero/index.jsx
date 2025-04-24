@@ -46,7 +46,7 @@ const Hero = () => {
             </p>
 
             {/* Call to Action */}
-            <Button variant="dark" size="lg">Hire me</Button>
+            {/* <Button variant="dark" size="lg">Hire me</Button> */}
           </Col>
         </Row>
       </Container>
