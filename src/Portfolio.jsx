@@ -1,14 +1,12 @@
 import React from "react";
+import Hero from './Hero';
+import './portfolio.scss';
+
 
 export default function Portfolio() {
   return (
     <div className="bg-light text-dark font-sans">
-      {/* Hero Section */}
-      <section className="d-flex flex-column justify-content-center align-items-center vh-100 text-center p-4">
-        <h1 className="display-3 fw-bold mb-3">Jamir Khan</h1>
-        <p className="fs-4 mb-4">Full Stack Developer | Tech Lead</p>
-        <button className='btn btn-primary btn-lg'>View My Work</button>
-      </section>
+      <Hero />
 
       {/* About Section */}
       <section className="container py-5">

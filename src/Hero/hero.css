@@ -1,0 +1,12 @@
+.logo {
+  width: 32px;
+  height: 32px;
+  line-height: 30px;
+}
+
+.hero-photo {
+  width: 262px;
+  height: 262px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
