@@ -13,7 +13,14 @@ const Hero = () => {
 
       {/* CV Button */}
       <div className="position-absolute top-0 end-0 m-3">
-        <Button variant="light">Get my CV</Button>
+        <Button 
+          variant="light" 
+          as="a" 
+          href="/Jamir_Khan_Resume.pdf" 
+          download
+        >
+          Get my CV
+        </Button>
       </div>
 
       <Container>
