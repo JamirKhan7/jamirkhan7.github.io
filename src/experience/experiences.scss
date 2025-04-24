@@ -1,0 +1,28 @@
+.experience-section {
+  position: relative;
+
+  .timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+    width: 2px;
+    background-image: repeating-linear-gradient(to bottom,
+        #ccc,
+        #ccc 4px,
+        transparent 4px,
+        transparent 8px);
+    z-index: 0;
+  }
+
+  .timeline-point {
+    width: 16px;
+    height: 16px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    z-index: 1;
+  }
+}

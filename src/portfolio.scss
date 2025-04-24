@@ -11,3 +11,7 @@ $theme-colors: (
 );
 
 @import "bootstrap/scss/bootstrap";
+
+.portfolio-main .container {
+  max-width: 960px;
+}
