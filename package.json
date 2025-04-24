@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jamirkhan7.github.io/portfolio",
+  "homepage": "https://jamirkhan7.github.io",
   "scripts": {
     "dev": "vite",
     "lint": "eslint .",
