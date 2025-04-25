@@ -1,48 +1,51 @@
 // src/components/Hero.js
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import './hero.css';
+import './hero.scss';
 
 const Hero = () => {
   return (
     <div className="hero-section d-flex align-items-center justify-content-center text-center min-vh-100 bg-light position-relative container">
       {/* Toggle icon */}
       <div className="position-absolute top-0 start-0 m-3">
-        <div className="theme-toggle bg-dark rounded-circle text-white logo">JK</div>
+        <div className="theme-toggle logo">
+          <img src="/logo.svg" />
+        </div>
       </div>
 
       {/* CV Button */}
       <div className="position-absolute top-0 end-0 m-3">
-        <Button 
-          variant="light" 
-          as="a" 
-          href="/Jamir_Khan_Resume.pdf" 
+        <Button
+          variant="light"
+          size='lg'
+          as="a"
+          href="/Jamir_Khan_Resume.pdf"
           download
+          className='bg-white base-font-size'
         >
-          Get my CV
+          Resume
         </Button>
       </div>
 
       <Container>
         <Row className="justify-content-center">
           <Col md={8}>
-            {/* Profile Photo */}
             <img
               src="/photo.jpg" // Replace with your image path
               alt="Jamir Khan"
-              className="rounded-circle mb-4 hero-photo"
+              className="rounded-circle mb-5 hero-photo"
             />
 
-            {/* Name */}
-            <h5 className="text-uppercase text-secondary mb-2">Jamir Khan</h5>
+            <h5 className="display-5"><strong>Jamir Khan</strong></h5>
+            <div className='d-flex align-items-center justify-content-center my-3'>
+              {/* <h1 className="display-4 mb-0"><strong>Fullstack</strong></h1> */}
+              {/* <img src="/logo.svg" className='mx-3 opacity-25' /> */}
+              <h1 className="display-2 mb-0"><strong>Fullstack Developer</strong></h1>
+            </div>
+            {/* <h5 className="display-5 mb-4"><strong>Based in Pune.</strong></h5> */}
 
-            {/* Title */}
-            <h1 className="display-3 mb-3">Full Stack Developer</h1>
-
-            {/* Description */}
-            <p className="text-muted mb-4">
-              Specialized in scalable enterprise applications with 10+ years of experience.
-              Passionate about building performant, accessible, and user-friendly solutions.
+            <p className="text-muted mb-5">
+              I help startups and growing businesses build scalable, accessible, and high-performance web applications using Ruby on Rails and React. With over 10 years of experience, I bring clean code, strategic thinking, and full-stack execution to every project.
             </p>
 
             {/* Call to Action */}

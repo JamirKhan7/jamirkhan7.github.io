@@ -28,9 +28,9 @@ export default function ServicesSection() {
         <Row className="g-4">
           {services.map((service, index) => (
             <Col key={index} md={4}>
-              <Card className="h-100 shadow-sm border-0 rounded-3 p-3">
+              <Card className="h-100 border-0 rounded-3 p-3">
                 <div className="icon-wrapper mb-3 rounded-2"><span className="material-symbols-outlined">{service.icon}</span></div>
-                <Card.Title>{service.title}</Card.Title>
+                <Card.Title className='h6'>{service.title}</Card.Title>
                 <Card.Text className="text-muted">{service.description}</Card.Text>
               </Card>
             </Col>

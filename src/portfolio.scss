@@ -7,11 +7,17 @@ $theme-colors: (
   "danger": #dc3545,
   "light": #f8f9fa,
   "dark": #2C3E50,
-  // Custom dark
 );
+
+$font-size-base: 0.875rem;
 
 @import "bootstrap/scss/bootstrap";
 
 .portfolio-main .container {
   max-width: 960px;
+}
+
+.base-font-size {
+  font-size: $font-size-base !important;
+  line-height: $line-height-base !important;
 }
