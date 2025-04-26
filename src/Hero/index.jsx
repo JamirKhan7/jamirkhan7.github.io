@@ -5,7 +5,7 @@ import './hero.scss';
 
 const Hero = () => {
   return (
-    <div className="hero-section bg-light container section-container">
+    <div className="hero-section container section-container">
       <div className='hero-header'>
         <div className="theme-toggle logo">
           <img src="/logo.svg" />

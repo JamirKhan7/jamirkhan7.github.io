@@ -1,0 +1,8 @@
+.skills-logo {
+  width: 32px;
+  height: 32px;
+
+  &.skills-ruby-on-rails-logo {
+    filter: invert(15%) sepia(95%) saturate(3482%) hue-rotate(354deg) brightness(82%) contrast(124%);
+  }
+}

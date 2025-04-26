@@ -9,7 +9,7 @@ import Skills from "./skills";
 
 export default function Portfolio() {
   return (
-    <div className="bg-light text-dark font-san portfolio-main">
+    <div className="text-dark font-san portfolio-main">
       <Hero />
       <Services />
       <Experience />

@@ -1,5 +1,5 @@
 import React from 'react';
-import './education.scss';
+import { Card, Container, Row, Col } from 'react-bootstrap';
 
 const education = [
   {
@@ -13,25 +13,28 @@ const education = [
     location: "Chennai",
     degree: "Bachelor of Business Administration",
     year: "2012",
-  },
+  }
 ];
 
 const Education = () => {
   return (
-    <section className="education-section">
-      <div className="container">
-        <h2 className="section-title">Education</h2>
-        <div className="education-grid">
+    <section className="bg-light">
+      <Container className='section-container education-section'>
+        <h2 className="mb-2 fw-normal">Education</h2>
+        <p className="text-body-secondary mb-5">My academic journey and continuing education</p>
+
+        <Row className="g-4">
           {education.map((edu, index) => (
-            <div key={index} className="education-card">
-              <h3 className="institution">{edu.institution}</h3>
-              <p className="location">{edu.location}</p>
-              <p className="degree">{edu.degree}</p>
-              <p className="year">{edu.year}</p>
-            </div>
+            <Col key={index} md={4}>
+              <Card className="h-100 border-0 rounded-3 p-3">
+                <Card.Title className='h6'>{edu.degree}</Card.Title>
+                <Card.Text className="text-muted">{edu.institution} / {edu.location}</Card.Text>
+                <Card.Text className="text-muted">{edu.year}</Card.Text>
+              </Card>
+            </Col>
           ))}
-        </div>
-      </div>
+        </Row>
+      </Container>
     </section>
   );
 };

@@ -20,6 +20,23 @@ $theme-colors: (
   padding-bottom: 64px;
 }
 
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+  }
+
+  .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+  }
+}
+
 @media only screen and (min-width: 1281px) {
   .portfolio-main .container {
     padding-left: 64px;

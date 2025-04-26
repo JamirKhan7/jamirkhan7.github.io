@@ -1,4 +1,3 @@
-// src/components/ServicesSection.jsx
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import './services.scss';
 
@@ -22,13 +21,13 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="section-container services-section">
+    <section className="section-container services-section bg-light">
       <Container>
         <Row className="g-4">
           {services.map((service, index) => (
             <Col key={index} md={4}>
               <Card className="h-100 border-0 rounded-3 p-3">
-                <div className="icon-wrapper mb-3 rounded-2"><span className="material-symbols-outlined">{service.icon}</span></div>
+                <div className="icon-wrapper mb-3 rounded-2  bg-body-secondary"><span className="material-symbols-outlined">{service.icon}</span></div>
                 <Card.Title className='h6'>{service.title}</Card.Title>
                 <Card.Text className="text-muted">{service.description}</Card.Text>
               </Card>
