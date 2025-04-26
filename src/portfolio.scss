@@ -1,23 +1,28 @@
 $theme-colors: (
   "primary": #007bff,
-  "secondary": #6c757d,
-  "success": #28a745,
-  "info": #17a2b8,
-  "warning": #ffc107,
-  "danger": #dc3545,
   "light": #f8f9fa,
-  "dark": #2C3E50,
 );
-
-$font-size-base: 0.875rem;
 
 @import "bootstrap/scss/bootstrap";
 
-.portfolio-main .container {
-  max-width: 960px;
+.base-font-size {
+  font-size: $font-size-base;
 }
 
-.base-font-size {
-  font-size: $font-size-base !important;
-  line-height: $line-height-base !important;
+.portfolio-main .container {
+  max-width: 1280px;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.section-container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media only screen and (min-width: 1281px) {
+  .portfolio-main .container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 }

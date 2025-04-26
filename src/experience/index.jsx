@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import './experiences.scss';
 
 const experiences = [
   {
@@ -36,27 +36,27 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div className="container py-5">
-      <h2 className="fw-bold mb-3">Experience</h2>
-      <p className="text-muted mb-4">My professional journey in software development</p>
-      <div className="row fw-bold text-uppercase text-secondary border-bottom pb-2 mb-3">
-        <div className="col-md-4">Company</div>
+    <section className="section-container container">
+      <h2 className="mb-2 fw-normal">Experience</h2>
+      <p className="text-body-secondary mb-5">My professional journey in software development</p>
+      <div className="row fw-semibold text-uppercase text-body-tertiary g-0 experience-row">
         <div className="col-md-4">Position</div>
+        <div className="col-md-4">Company</div>
         <div className="col-md-4">Year</div>
       </div>
       {experiences.map((exp, idx) => (
         <div
-          className="row align-items-start py-2 border-bottom"
+          className="row align-items-start g-0 experience-row"
           key={idx}
         >
+          <div className="col-md-4 fw-bold">{exp.position}</div>
           <div className="col-md-4">
-            <strong>{exp.company}</strong> <span className="text-muted">/ {exp.location}</span>
+            {exp.company} <span className="text-body-tertiary">/ {exp.location}</span>
           </div>
-          <div className="col-md-4">{exp.position}</div>
-          <div className="col-md-4 text-muted">{exp.years}</div>
+          <div className="col-md-4 text-body-tertiary">{exp.years}</div>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

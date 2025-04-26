@@ -4,26 +4,25 @@ import './services.scss';
 
 const services = [
   {
-    // icon: <FontAwesomeIcon icon={faCodeBranch} />,
-    icon: 'code',
-    title: 'Full-Stack Development',
-    description: 'Over 10 years of experience building scalable web applications using Ruby on Rails, React, and modern JavaScript frameworks. Focused on responsive UI, performance, and accessibility.',
+    icon: 'stacks',
+    title: 'Full Stack Web Development',
+    description: 'I build scalable, full-stack web applications using React for the frontend and Ruby on Rails for the backend — tailored to your business goals and user needs.',
   },
   {
-    icon: 'construction',
-    title: 'Legacy Upgrades & Optimization',
-    description: 'Leading modernization of outdated and vulnerable codebases by upgrading libraries, improving architecture, and ensuring long-term maintainability.',
+    icon: 'developer_mode_tv',
+    title: 'Frontend Modernization & Performance Optimization',
+    description: 'I upgrade outdated frontends, improve page speed, ensure cross-browser compatibility, and implement modern, mobile-responsive designs that deliver a better user experience.',
   },
   {
-    icon: 'work',
-    title: 'Enterprise Features',
-    description: 'Designed and delivered enterprise modules like News Feed, Dashboards, and Surveys. Also building custom freelance projects using Rails, React, and Bootstrap.',
+    icon: 'accessibility_new',
+    title: 'UI/UX Enhancements with Accessibility Compliance',
+    description: 'I design and develop interfaces that are not only beautiful but also accessible (WCAG 2.1 compliant), improving usability for all users, including those with disabilities.',
   },
 ];
 
 export default function ServicesSection() {
   return (
-    <section className="services-section py-5 bg-light">
+    <section className="section-container services-section">
       <Container>
         <Row className="g-4">
           {services.map((service, index) => (
