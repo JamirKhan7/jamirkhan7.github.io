@@ -12,21 +12,21 @@ const Hero = () => {
 
 
         <Button
-          variant="light"
+          variant="primary"
           size='lg'
           as="a"
           href="/Jamir_Khan_Resume.pdf"
           download
-          className='bg-white base-font-size'
+          className='base-font-size d-flex align-items-center text-white'
         >
-          Resume
+          <span className="material-symbols-outlined me-1">download</span>Resume
         </Button>
       </div>
 
       <div className='hero-section-content'>
         <Row className="justify-content-center">
-          <Col md={9}>
-            <div className='mb-3 pb-5'>
+          <Col md={8}>
+            <div className='pb-4'>
               <img
                 src="/photo.jpg" // Replace with your image path
                 alt="Jamir Khan"
@@ -34,8 +34,8 @@ const Hero = () => {
               />
             </div>
 
-            <h5 className="h3 text-uppercase text-body-secondary fw-semibold mb-4 pb-2">Jamir Khan</h5>
-            <h1 className="display-2 mb-4 pb-2"><strong>Fullstack Developer</strong></h1>
+            <h5 className="h3 text-uppercase text-body-secondary fw-semibold mb-3">Jamir Khan</h5>
+            <h1 className="display-2 mb-3"><strong>Fullstack Developer</strong></h1>
 
             <p className="text-muted mb-5">
               I help startups and growing businesses build scalable, accessible, and high-performance web applications using Ruby on Rails and React. With over 10 years of experience, I bring clean code, strategic thinking, and full-stack execution to every project.
