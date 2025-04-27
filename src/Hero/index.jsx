@@ -1,6 +1,5 @@
-// src/components/Hero.js
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 import './hero.scss';
 
 const Hero = () => {

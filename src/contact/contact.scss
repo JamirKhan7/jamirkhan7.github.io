@@ -1,0 +1,12 @@
+$primary: #007bff;
+
+.footer-icon-link {
+  width: 32px;
+  height: 32px;
+
+  >svg {
+    width: 24px;
+    height: 24px;
+    fill: $primary;
+  }
+}
